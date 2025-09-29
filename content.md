@@ -111,7 +111,19 @@ Most objects in Ruby are *truthy*, even `0`, `""`, and `[]`. Only `false` and `n
 
 ## Comparisons
 
-We'll mostly use expressions after `if` that return either `true` or `false`. There are a lot of operators that are designed to do this; we've seen Integer's `.odd?` and `.even?` methods, but there are a lot more.
+We'll mostly use expressions after `if` that return either `true` or `false`. There are a lot of operators that are designed to do this; we've seen Integer's `.odd?` and `.even?` methods, but there are a lot more. Use these logical operators to return a Boolean (`true` / `false`).
+
+- `>`: is greater than?
+- `<`: is less than?
+- `==`: is equal to?
+- `!=`: is *not* equal to?
+- `>=`: is greater than or equal to?
+- `<=`: is less than or equal to?
+
+and combine conditions with `&&` ("and") and `||` ("or") operators:
+
+- `&&`: "and" join 2 conditions
+- `||`: "or" either condition `true` returns `true`
 
 ```ruby
 5 > 3     # is 5 greater than 3?
